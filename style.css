@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #1f1f1f;
+}
+
+/* header */
+
+header {
+    position: sticky;
+    top: 0;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 0.1rem 0.25rem #ccc;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav img {
+    height: 3vh;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    min-width: 280px;
+    right: 1rem;
+    top: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.25rem #ccc;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* main */
+
+main{
+    margin: 0 2rem;
+}
+
+code {
+    width: min-content;
+    border-radius: 1rem;
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+}
+
+.keyword { color: #569cd6; } /* Usado apenas para colorir os exemplos de código mais fácilmente */
+.function { color: #dcdcaa; }
+.variable { color: #9cdcfe; }
+.number { color: #b5cea8; }
+.string { color: #ce9178; }
+.method { color: #c586c0; }
+.comment { color: #6a9955; }
