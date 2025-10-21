@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="../scripts/funcaoHeader.js" defer></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    <!-- Highlight.js => formata os códigos que dou de exemplo nessa página automaticamente -->
-
+    <script src="../scripts/funcaoCarrosel.js" defer></script>
     <title>Situação de Aprendizagem</title>
 </head>
 
@@ -36,20 +31,30 @@
     </header>
 
     <main>
-        <pre>
-            <code class="language-javascript">function fazerConversaoTemperatura(temp, direcao){
-    switch (direcao) {
-        case "fahrenheitParaCelsius":
-            fahrenheitParaCelsius(temp)
-            break;
-        case "celsiusParaFahrenheit":
-            celsiusParaFahrenheit(temp)
-            break;
-        default:
-            break;
-    }
-} // apenas um teste =D</code>
-        </pre>
+        <div class="split-container">
+            <section>
+                <h1>Lógica de Programação</h1>
+                <h2>1. O que são Linguagens de Programação?</h2>
+                <p>Fale sobre as seguintes linguagens: C++, Javascript, Java, Python, PHP.</p>
+                <h2>2. Linguagens de programação interpretadas & compiladas</h2>
+                <p></p>
+                <h2>3. O que é HTML e CSS</h2>
+                <p></p>
+                <h2>4. O que é uma IDE?</h2>
+                <p>Ambiente de desenvolvimento de sistemas - exemplos: VSCode, IntelliJ</p>
+            </section>
+
+            <div class="container">
+                <h1>Exemplos de Programas</h1>
+
+                <div id="code-examples-container">
+                    <button id="prevBtn">⬅️</button>
+                    <p id="tituloPrograma">Titulo do Programa</p>
+                    <button id="nextBtn">➡️</button>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -58,3 +63,11 @@
 </body>
 
 </html>
+
+<!-- 1. Ordenar números de de 1 a 20, em ordem crescente e decrescente 
+2. Ordenar 10 números aleatórios de 1 a 20 (com bubleSort).
+3. Somar 10 números aleatórios de 1 a 220 em um array.
+4. Gerar uma matriz 3x3 com números aleatórios de 1 a 20.
+5. Calcular o IMC de uma pessoa.
+6. Converter a temperatura em °F, °C.
+7. Apresente um script de busca linear -->
