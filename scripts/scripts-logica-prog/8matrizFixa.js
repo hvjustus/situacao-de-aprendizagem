@@ -1,5 +1,3 @@
-// 8. Apresente um script para gerar uma matriz 3 x 3 de números aleatórios de 1 a 20.
-
 function gerarMatrizAleatoria(lado, min, max) {
     let mat = [], cont = 1
     for (let i = 0; i < lado; i++) {

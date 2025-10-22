@@ -1,4 +1,4 @@
-function calcularIMC(peso, altura){ // em kg e metros
+function calcularIMC(peso, altura){
     return (peso / (altura * altura)).toFixed(2)
 }
 

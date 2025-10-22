@@ -1,5 +1,3 @@
-/* 5. Gere um script para ordenar números de de 1 a 20, em ordem crescente e decrescente */
-
 function gerarArrayAleatorio(min, max, qnt) {
     let arr = []
     for (let i = 0; i < qnt; i++) {

@@ -1,4 +1,4 @@
-let arr = ["macas", "1", "teste", "3"]
+let arr = ["macas", "1", "resposta", "3"]
 
 function buscaLinear(arr, valor) {
     for (let i = 0; i < arr.length; i++) {
@@ -11,4 +11,4 @@ function buscaLinear(arr, valor) {
     return false
 }
 
-console.log(buscaLinear(arr, "teste"))
+console.log(buscaLinear(arr, "resposta"))

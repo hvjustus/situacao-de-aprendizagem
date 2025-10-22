@@ -1,42 +1,50 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const programas = [
-        { nome: "Ordenar Crescente e Decrescente", arquivo: "../scripts/5ordenarCresDec.js" },
-        { nome: "Ordenar com BubbleSort", arquivo: "../scripts/6bubbleSort.js" },
-        { nome: "Somar Array", arquivo: "../scripts/7somarArr.js" },
-        { nome: "Matriz 3x3", arquivo: "../scripts/8matrizFixa.js" },
-        { nome: "Calcular IMC", arquivo: "../scripts/9calcularIMC.js" },
-        { nome: "Conversor de Temperatura", arquivo: "../scripts/10conversorTemperatura.js" },
-        { nome: "Busca Linear", arquivo: "../scripts/11buscaLinear.js" }
-    ];
+const programTitle = document.getElementById("programTitle");
+const codeEl = document.getElementById("programCode");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
 
-    let index = 0;
+const programs = [
+  { title: "Ordenar Crescente e Decrescente", file: "../scripts/scripts-logica-prog/5ordenarCresDec.js" },
+  { title: "Ordenar com BubbleSort", file: "../scripts/scripts-logica-prog/6bubbleSort.js" },
+  { title: "Somar Array", file: "../scripts/scripts-logica-prog/7somarArr.js" },
+  { title: "Matriz 3x3", file: "../scripts/scripts-logica-prog/8matrizFixa.js" },
+  { title: "Calcular IMC", file: "../scripts/scripts-logica-prog/9calcularIMC.js" },
+  { title: "Conversor de Temperatura", file: "../scripts/scripts-logica-prog/10conversorTemperatura.js" },
+  { title: "Busca Linear", file: "../scripts/scripts-logica-prog/11buscaLinear.js" }
+];
 
-    const titulo = document.getElementById("tituloPrograma");
-    const codigoArea = document.getElementById("codigo");
-    const resDiv = document.getElementById("res");
+let currentIndex = 0;
+let isAnimating = false;
 
-    const carregarPrograma = i => {
-        const { nome, arquivo } = programas[i];
-        titulo.textContent = nome;
-        resDiv.textContent = "";
-        fetch(arquivo)
-            .then(res => res.text())
-            .then(texto => codigoArea.textContent = texto)
-            .catch(() => codigoArea.textContent = "Erro ao carregar código 😢");
-    };
+async function showCode(index) {
+  if (isAnimating) return;
+  isAnimating = true;
 
-    const mudarPrograma = delta => {
-        index = (index + delta + programas.length) % programas.length;
-        carregarPrograma(index);
-    };
+  codeEl.classList.add("fade-out");
+  await new Promise(r => setTimeout(r, 400));
 
-    document.getElementById("prevBtn")?.addEventListener("click", () => mudarPrograma(-1));
-    document.getElementById("nextBtn")?.addEventListener("click", () => mudarPrograma(1));
+  try {
+    const res = await fetch(programs[index].file);
+    const text = await res.text();
+    codeEl.textContent = text;
+    programTitle.textContent = programs[index].title;
+    Prism.highlightElement(codeEl);
+  } catch {
+    codeEl.textContent = "Erro ao carregar código";
+  }
 
-    document.getElementById("runBtn")?.addEventListener("click", () => {
-        try { resDiv.textContent = eval(codigoArea.textContent) ?? ""; }
-        catch { resDiv.textContent = "Erro ao executar o código ⚠️"; }
-    });
+  codeEl.classList.remove("fade-out");
+  await new Promise(r => setTimeout(r, 400));
+  isAnimating = false;
+}
 
-    carregarPrograma(index);
-});
+nextBtn.onclick = () => {
+  currentIndex = (currentIndex + 1) % programs.length;
+  showCode(currentIndex);
+};
+prevBtn.onclick = () => {
+  currentIndex = (currentIndex - 1 + programs.length) % programs.length;
+  showCode(currentIndex);
+};
+
+showCode(currentIndex);

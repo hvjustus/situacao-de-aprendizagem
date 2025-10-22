@@ -1,5 +1,3 @@
-// 7. Apresente um script para somar 10 números aleatórios de 1 a 220 em um array.
-
 function gerarArrayAleatorio(min, max, qnt) {
     let arr = []
     for (let i = 0; i < qnt; i++) {
