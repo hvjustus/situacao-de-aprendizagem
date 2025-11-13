@@ -1,0 +1,19 @@
+<svg viewBox="0 0 1144 560" xmlns="http://www.w3.org/2000/svg" class="hvj-logo">
+  <!-- Left angle bracket < -->
+  <path d="M 175 230 L 40 280 L 175 330" fill="none" stroke="#2098D1" stroke-width="35" stroke-linecap="square" stroke-linejoin="miter"/>
+  
+  <!-- Forward slash / -->
+  <path d="M 290 430 L 360 130" fill="none" stroke="#2098D1" stroke-width="35" stroke-linecap="square"/>
+  
+  <!-- Letter H -->
+  <path d="M 413 130 L 413 410 M 413 270 L 523 270 M 523 130 L 523 410" fill="none" stroke="#2098D1" stroke-width="35" stroke-linecap="square"/>
+  
+  <!-- Letter V -->
+  <path d="M 570 130 L 570 150 L 655 370 L 740 150 L 740 130" fill="none" stroke="#2098D1" stroke-width="35" stroke-linecap="square" stroke-linejoin="miter"/>
+  
+  <!-- Letter J -->
+  <path d="M 850 130 L 850 360 Q 850 410 800 410 Q 770 410 770 380" fill="none" stroke="#2098D1" stroke-width="35" stroke-linecap="square"/>
+  
+  <!-- Right angle bracket > -->
+  <path d="M 969 230 L 1104 280 L 969 330" fill="none" stroke="#2098D1" stroke-width="35" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

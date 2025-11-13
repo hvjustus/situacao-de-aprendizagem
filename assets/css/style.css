@@ -1,0 +1,25 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-black: #1b2026;
+    --main-grey: #1a1a1a;
+    --main-white: #f7f7fd;
+    --main-highlight: #2098D1;
+    --panache-purple-transparent: rgba(115, 0, 255, 0.25)
+}
+
+::selection {
+    background-color: var(--main-highlight);
+    color: var(--main-white);
+}
+
+.hvj-text { color: var(--main-highlight) !important }
+.hvj-bg { background: var(--main-highlight) }
+.hvj-outline { outline: 2px solid var(--main-highlight); }
+
+.bg-grey { background-color: var(--main-grey); }
+
+.bg-blur { backdrop-filter: blur(1rem); }
