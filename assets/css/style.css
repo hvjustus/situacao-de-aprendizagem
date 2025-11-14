@@ -28,3 +28,5 @@
 .icon { height: 1.25rem; width: auto; }
 .icon-sm { height: 0.875rem; width: auto; }
 .icon-xs { height: 0.550rem; width: auto; }
+
+.input-small { max-width: 60px; }
