@@ -41,17 +41,18 @@ A publicação do site/página, contendo os serviços de Tecnologia da Informaç
 
 ### Fundamentos de Eletroeletrônica:
 
-1. Componentes Eletrônicos empregados em serviços (Resistor, Diodo LED, Transistor, Circuito Integrado)
+1. Componentes Eletrônicos empregados em serviços (Resistor, Diodo LED, Transistor, Circuito Integrado) --
+
 2. Sensores empregados em Sistemas Automatizados (Sensor de temperatura, umidade, luminosidade, etc.)
 3. Arduino: O que é, para que serve, aplicações, vantagens e desvantagens.
 4. Como o Arduino funciona? O que é eletrônica embarcada?
 5. Arduino: Qual a linguagem de programação usada? (C++, Python, etc.)
 6. O que são entradas e saídas digitais em circuitos integrados como o Arduino?
 7. O que são entradas e saídas analógicas em circuitos integrados como o Arduino?
+11. O que é um diodo? O que é um Diodo LED? E um Display de 7 segmentos?
 8. Script para cálculo da tensão, corrente, resistência pela Lei de Ohm.
 9. Script para cálculo da Potência a partir de valores de tensão, resistência e corrente.
 10. Apresente um programa para leitura de dados de um sensor analógico, acionando saídas digitais.
-11. O que é um diodo? O que é um Diodo LED? E um Display de 7 segmentos?
 
 ---
 
@@ -68,14 +69,7 @@ A publicação do site/página, contendo os serviços de Tecnologia da Informaç
 ---
 
 ### Fundamentos de Banco de Dados:
-
-1. O que é um SGBD? Tipos e Aplicações? --
-2. Quais os principais bancos de dados? --
-3. O que é um dicionário de dados? Quais os tipos de dados de um banco de dados? --
-4. O que é uma modelagem de banco de dados? E o modelo DER? MER?
-5. Explique um exemplo de um diagrama DER (foto).
-6. Explique um exemplo de um diagrama MER (foto).
-7. Faça um formulário para cadastro de dados simulando a gravação dos dados.
+Finalizar textos
 
 ---
 

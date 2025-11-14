@@ -21,5 +21,10 @@
 .hvj-outline { outline: 2px solid var(--main-highlight); }
 
 .bg-grey { background-color: var(--main-grey); }
-
 .bg-blur { backdrop-filter: blur(1rem); }
+
+.icon-xl { height: 2.25rem; width: auto; }
+.icon-lg { height: 1.75rem; width: auto; }
+.icon { height: 1.25rem; width: auto; }
+.icon-sm { height: 0.875rem; width: auto; }
+.icon-xs { height: 0.550rem; width: auto; }
